@@ -13,9 +13,6 @@ for(let i = 0; i<expandNavHead.length; i++){
             dropArrowDark[i].style.transform = "rotate(0turn)"
         }
         else{ 
-            // for(ul of uls){
-            //     if(ul.classList.contains("visible")) ul.classList.remove("visible");
-            // }
             if(lastClick>=0){
                  uls[lastClick].classList.remove("visible");
                    dropArrowLight[i].style.transform = "rotate(0turn)"
@@ -30,10 +27,6 @@ for(let i = 0; i<expandNavHead.length; i++){
         }
         e.stopPropagation();
     });
-    // if(uls[i].classList.contains("visible")){
-        
-       
-    // }
 }
 for (let i = 0; i < expandNavHead.length; i++) {
     document.querySelector("body").addEventListener("click",(e)=>{
@@ -43,18 +36,16 @@ for (let i = 0; i < expandNavHead.length; i++) {
     });
     
 }
-
 hamburger.addEventListener("click",()=>{
-    // hamburger.style.display = "none";
+   
     hamburger.classList.add("display-none");
-    // navClose.style.display =  "initial";
+  
     navClose.classList.add("display-initial");
     document.querySelector(".nav-items-mobile-row").classList.add("display-initial");
 });
 navClose.addEventListener("click",()=>{
      hamburger.classList.remove("display-none");
-    // hamburger.style.display = "initial";
-    // navClose.style.display =  "none";
+  
      navClose.classList.remove("display-initial");
     document.querySelector(".nav-items-mobile-row").classList.remove("display-initial");
 });
@@ -66,27 +57,3 @@ window.addEventListener('resize',()=>{
          document.querySelector(".nav-items-mobile-row").classList.remove("display-initial");
     }
 });
-// window.addEventListener('resize',()=>{
-//     if(window.matchMedia("(max-width:1000px)")){
-//         hamburger.classList.remove("display-none");
-//         // navClose.classList.remove("display-initial");
-//         //  document.querySelector(".nav-items-mobile-row").classList.remove("display-initial");
-//     }
-// });
-// window.addEventListener('resize',()=>{
-//     if(window.matchMedia("(width:1000px)")){
-//         for(nav of expandNavHead){
-//             nav.style.color="hsl(208, 49%, 24%)";
-//         }
-//     }else if(window.matchMedia("(min-width:1000px)")){
-//         nav.style.color="hsl(240, 2%, 79%)";
-//     }
-// });
-
-
-
-// for(let nav of expandNavHead){
-// nav.addEventListener('click', ()=>{
-//     document.querySelector("nav ul").style.display = "flex";
-// });
-// }
