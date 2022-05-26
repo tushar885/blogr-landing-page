@@ -195,7 +195,6 @@ main{
     display: flex;
     gap: 5rem;
     align-items: center;
-    background-position-y: -50rem; */
     background-position: -21rem -50rem, right;
     height: 400px;
     margin-bottom: 10rem;
